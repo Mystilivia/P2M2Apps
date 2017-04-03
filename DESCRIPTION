@@ -1,0 +1,10 @@
+Package: P2M2Apps
+Type: Package
+Title: Targeted analysis tools
+Version: 0.1.0
+Author: Sylvain Dechaumet
+Maintainer: Sylvain Dechaumet <mystilivia@gmail.com>
+Description: Application intéractive pour le traitement de données issues d'analyses quantitatives.
+License: open
+Encoding: UTF-8
+LazyData: true
