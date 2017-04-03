@@ -8,3 +8,19 @@ Description: Application intéractive pour le traitement de données issues d'an
 License: open
 Encoding: UTF-8
 LazyData: true
+Imports:
+         shiny,
+         shinyjs,
+         magrittr,
+         DT,
+         shinydashboard,
+         shinyBS,
+         data.table,
+         ggplot2,
+         readxl,
+         xlsx,
+         markdown,
+         curl,
+         plotly,
+         openssl,
+         tidyr
