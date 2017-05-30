@@ -178,13 +178,13 @@ check_dlist <- function(data) {
     } else {status_list[[2]] <- list('status' = 'success', 'value' = NA, 'message' = NULL)}
     ## Check duplicates in (1) or (2) or (3)
     if(any(duplicated(data[[1]][,1]) == T)) {
-      status_list[[3]] <- list('status' = 'danger', 'value' = data[[1]][duplicated(),1][[1]], 'message' = "Certains échantillons sont dupliqués dans l'onglet (1)")
+      status_list[[3]] <- list('status' = 'danger', 'value' = NA, 'message' = "Certains échantillons sont dupliqués dans l'onglet (1)")
     } else {status_list[[3]] <- list('status' = 'success', 'value' = NA, 'message' = NULL)}
     if(any(duplicated(data[[2]][,1]) == T)) {
-      status_list[[4]] <- list('status' = 'danger', 'value' = data[[2]][duplicated(),1][[1]], 'message' = "Certains échantillons sont dupliqués dans l'onglet (2)")
+      status_list[[4]] <- list('status' = 'danger', 'value' = NA, 'message' = "Certains échantillons sont dupliqués dans l'onglet (2)")
     } else {status_list[[4]] <- list('status' = 'success', 'value' = NA, 'message' = NULL)}
     if(any(duplicated(data[[3]][,1]) == T)) {
-      status_list[[5]] <- list('status' = 'danger', 'value' = data[[3]][duplicated(),1][[1]], 'message' = "Certains échantillons sont dupliqués dans l'onglet (3)")
+      status_list[[5]] <- list('status' = 'danger', 'value' = NA, 'message' = "Certains échantillons sont dupliqués dans l'onglet (3)")
     } else {status_list[[5]] <- list('status' = 'success', 'value' = NA, 'message' = NULL)}
     ## Check consistency in (1) (2) and (1) (3)
     if(!identical(data[[1]][,1], data[[2]][,1])) {
